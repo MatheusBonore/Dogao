@@ -1,0 +1,14 @@
+@use "../../assets/sass/app.scss" as app;
+
+nav {
+	button#btn-pesquisar {
+		@include app.btn-default(transparent, #343a40, #000, 0);
+		width: 40px;
+		height: 40px;
+	}
+}
+
+
+.modal-content {
+	background-color: red !important;
+}

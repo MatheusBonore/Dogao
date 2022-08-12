@@ -1,0 +1,108 @@
+@use "./../../assets/sass/app.scss" as app;
+
+$cor-padrao: rgba(67, 67, 67, 1);
+$cor-padrao-selecionado: rgb(230, 230, 230);
+$cor-padrao-precionado: rgba(242, 242, 242, 0.5);
+
+$cor-padrao-ativado: rgba(220, 78, 64, 1);
+
+.menu a.active:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: -10px;
+	height: 15px;
+	width: 75px;
+	background-color: $cor-padrao-ativado;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-around;
+
+	min-width: 320px;
+	max-width: 520px;
+	text-align: center;
+	font-size: 20px;
+
+	a.active {
+		color: $cor-padrao-ativado;
+
+		/* mouse over link */
+		&:hover,
+		&:focus {
+			span {
+				background-color: transparent;
+			}
+		}
+
+		/* selected link */
+		&:active {
+			span {
+				background-color: transparent;
+			}
+		}
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		text-decoration: none;
+		cursor: pointer;
+		outline: none;
+
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+
+		color: $cor-padrao;
+		border: none;
+		background: none;
+
+		padding: 5px;
+		height: 55px;
+
+		overflow: hidden;
+		position: relative;
+
+		span {
+			transition: color 0.15s ease-in-out,
+				background-color 0.15s ease-in-out,
+				border-color 0.15s ease-in-out,
+				box-shadow 0.15s ease-in-out;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			width: 100%;
+			height: 100%;
+
+			border-radius: 5px;
+		}
+
+		/* mouse over link */
+		&:hover,
+		&:focus {
+			span {
+				background-color: $cor-padrao-selecionado;
+			}
+		}
+
+		/* selected link */
+		&:active {
+			span {
+				background-color: $cor-padrao-precionado;
+			}
+		}
+	}
+}
+
+.modal-content::ng-deep {
+	background-color: red !important;
+}

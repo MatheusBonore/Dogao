@@ -1,0 +1,31 @@
+<div class="autenticacao">
+	<div class="text-center">
+		<div class="bg-white p-5 shadow-sm rounded-3">
+			<img width="190" src="../../assets/amazon/logo-completo.png" alt="" srcset="">
+			<router-outlet></router-outlet>
+
+			<div class="form-group pt-5">
+				<small id="emailHelp" class="form-text text-muted text-center">
+					Nós nunca vamos compartilhar suas informações com mais ninguém.
+				</small>
+			</div>
+		</div>
+
+		<div class="py-3">
+			<a routerLink="cadastrar" routerLinkActive="d-none">
+				<div class="position-relative">
+					<div class="position-absolute top-0 start-0">Não tem uma conta?</div>
+					<div class="position-absolute top-0 end-0">Inscrição <i class="fas fa-angle-right"></i></div>
+				</div>
+			</a>
+
+			<a routerLink="entrar" routerLinkActive="d-none">
+				<div class="position-relative">
+					<div class="position-absolute top-0 start-0">Já é membro?</div>
+					<div class="position-absolute top-0 end-0">Iniciar Sessão <i class="fas fa-angle-right"></i>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>

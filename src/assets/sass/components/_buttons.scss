@@ -1,0 +1,18 @@
+.btn {
+	outline: none;
+	box-shadow: none;
+}
+
+.btn-doge {
+	background-image: linear-gradient(to right, #DC4E40 0%, #B51640 100%);
+	text-transform: uppercase;
+	background-size: 200% auto;
+	transition: 0.5s;
+
+	color: white;
+
+	&:hover {
+		background-position: right center;
+		color: white;
+	}
+}

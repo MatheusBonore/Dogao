@@ -1,0 +1,29 @@
+.autenticacao {
+	background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+
+	min-height: 100%;
+	min-height: 100vh;
+
+	display: grid;
+
+	align-items: center;
+	justify-content: center;
+
+	.text-center {
+		width: 100%;
+
+		div.bg-white {
+			min-width: 450px;
+			max-width: 450px;
+		}
+	}
+
+	img {
+		margin-bottom: 20px;
+	}
+
+	a {
+		color: #434343;
+		font-weight: bold;
+	}
+}
